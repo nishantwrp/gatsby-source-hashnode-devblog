@@ -1,0 +1,26 @@
+{
+  "name": "gatsby-source-hashnode-devblog",
+  "version": "0.1.0",
+  "description": "Gatsby plugin to retrieve blog posts from your devblog on hashnode. ",
+  "main": "gatsby-node.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishantwrp/gatsby-source-hashnode-devblog.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "source",
+    "hashnode",
+    "devblog"
+  ],
+  "author": "Nishant Mittal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nishantwrp/gatsby-source-hashnode-devblog/issues"
+  },
+  "homepage": "https://github.com/nishantwrp/gatsby-source-hashnode-devblog#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
