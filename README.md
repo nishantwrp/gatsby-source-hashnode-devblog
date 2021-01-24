@@ -7,7 +7,11 @@
     <h1 align="center">gatsby-source-hashnode-devblog</h1>
     <p align="center">
      Gatsby plugin to retrieve blog posts from your <a href = "https://hashnode.com/devblog">devblog</a> on <a href = "https://hashnode.com/">hashnode</a>. </p>
-    <p align="center"><a href="https://npmjs.com/package/gatsby-source-hashnode-devblog"><img src="https://badge.fury.io/js/gatsby-source-hashnode-devblog.svg" alt="npm version"></a><img alt="npm" src="https://img.shields.io/npm/dt/gatsby-source-hashnode-devblog"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"><img src="https://badgen.net/github/license/nishantwrp/gatsby-source-hashnode-devblog"><img src="https://img.shields.io/david/nishantwrp/gatsby-source-hashnode-devblog"></p>
+    <p align="center">
+      <a href="https://npmjs.com/package/gatsby-source-hashnode-devblog"><img src="https://badge.fury.io/js/gatsby-source-hashnode-devblog.svg" alt="npm version"></a>
+      <img alt="npm" src="https://img.shields.io/npm/dt/gatsby-source-hashnode-devblog">
+      <img src="https://img.shields.io/david/nishantwrp/gatsby-source-hashnode-devblog">
+    </p>
 </p>
 
 ## Installation
@@ -29,7 +33,7 @@ module.exports = {
     {
       resolve:  'gatsby-source-hashnode-devblog',
       options: {
-        username:  '', // Your username on hashnode
+        username:  '', // Your username on hashnode without `@`.
       }
     }
   ]
@@ -43,20 +47,17 @@ query MyQuery {
   allDevblogPost {
     edges {
       node {
-        post {
-          brief
-          content
-          contentMarkdown
-          coverImage
-          cuid
-          dateAdded
-          dateUpdated
-          slug
-          title
-          type
-          tags {
-            name
-          }
+        brief
+        contentMarkdown
+        coverImage
+        cuid
+        dateAdded
+        dateUpdated
+        slug
+        title
+        type
+        tags {
+          name
         }
         id
       }
